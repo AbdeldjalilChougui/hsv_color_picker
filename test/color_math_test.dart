@@ -21,7 +21,7 @@ void main() {
     });
 
     test('quantized snaps float channels to the 8-bit grid', () {
-      final c = Color.from(alpha: 0.5, red: 0.1234, green: 0.9999, blue: 0);
+      const c = Color.from(alpha: 0.5, red: 0.1234, green: 0.9999, blue: 0);
       final q = c.quantized();
       expect(q.toARGB32(), c.toARGB32());
       expect(q.r * 255, closeTo((q.r * 255).roundToDouble(), 1e-9));
@@ -29,7 +29,7 @@ void main() {
     });
 
     test('toSrgb converts a Display P3 color into sRGB, clamped', () {
-      final p3 = Color.from(
+      const p3 = Color.from(
           alpha: 1,
           red: 1,
           green: 0,
