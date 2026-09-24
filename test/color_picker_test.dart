@@ -363,6 +363,33 @@ void main() {
       expect(out.last.alpha8, lessThan(5));
     });
 
+    testWidgets('slider drags win against a parent TabBarView', (tester) async {
+      final out = <Color>[];
+      tester.view.physicalSize = const Size(1000, 2400);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final controller = TabController(length: 2, vsync: const TestVSync());
+      addTearDown(controller.dispose);
+      await tester.pumpWidget(MaterialApp(
+        home: Scaffold(
+          body: TabBarView(controller: controller, children: [
+            SingleChildScrollView(
+              child: ColorPicker(
+                  pickerColor: const Color(0xFF3366CC),
+                  onColorChanged: out.add),
+            ),
+            const Text('second tab'),
+          ]),
+        ),
+      ));
+      final rect = tester.getRect(sliderNamed('Alpha'));
+      await tester.dragFrom(
+          rect.centerRight - const Offset(2, 0), Offset(-rect.width, 0));
+      await tester.pumpAndSettle();
+      expect(controller.index, 0);
+      expect(out.last.alpha8, 0);
+    });
+
     testWidgets('dark Material 3 theme builds', (tester) async {
       await tester.pumpWidget(MaterialApp(
         theme: ThemeData(useMaterial3: true, brightness: Brightness.dark),
