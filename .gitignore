@@ -1,0 +1,14 @@
+.DS_Store
+*.swp
+.idea/
+*.iml
+.vscode/
+.dart_tool/
+build/
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+coverage/
+doc/api/
+example/android/.gradle
+local.properties
