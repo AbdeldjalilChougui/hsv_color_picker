@@ -1,6 +1,6 @@
 {
-    "name": "hsv_color_picker_example",
-    "short_name": "hsv_color_picker_example",
+    "name": "chroma_picker_example",
+    "short_name": "chroma_picker_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

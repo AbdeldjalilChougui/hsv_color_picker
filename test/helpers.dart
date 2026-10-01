@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hsv_color_picker/hsv_color_picker.dart';
+import 'package:chroma_picker/chroma_picker.dart';
 
 /// Pumps [child] in a Material 3 app with a tall surface.
 Future<void> pumpPicker(

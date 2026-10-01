@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/painting.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hsv_color_picker/hsv_color_picker.dart';
+import 'package:chroma_picker/chroma_picker.dart';
 
 void main() {
   group('colorFromHex', () {

@@ -1,10 +1,10 @@
-# hsv_color_picker
+# chroma_picker
 
 Maintained HSV, HSL, RGB, hue-ring, Material and block color pickers for Flutter. It is a
 clean-room replacement for `flutter_colorpicker` that uses the Flutter 3.27+ `Color` API, has
 screen reader and keyboard support, and fixes that package's long-standing hex-input and state bugs.
 
-[![pub package](https://img.shields.io/pub/v/hsv_color_picker.svg)](https://pub.dev/packages/hsv_color_picker)
+[![pub package](https://img.shields.io/pub/v/chroma_picker.svg)](https://pub.dev/packages/chroma_picker)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Features
@@ -44,14 +44,14 @@ screen reader and keyboard support, and fixes that package's long-standing hex-i
 
 ```yaml
 dependencies:
-  hsv_color_picker: ^0.1.0
+  chroma_picker: ^0.1.0
 ```
 
 ## Usage
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:hsv_color_picker/hsv_color_picker.dart';
+import 'package:chroma_picker/chroma_picker.dart';
 
 Future<Color?> pickColor(BuildContext context, Color initial) {
   var picked = initial;
@@ -145,7 +145,7 @@ Most code only needs a new import:
 // before
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 // after
-import 'package:hsv_color_picker/hsv_color_picker.dart';
+import 'package:chroma_picker/chroma_picker.dart';
 ```
 
 The following names are kept, with the same main parameters:
@@ -160,7 +160,7 @@ The following names are kept, with the same main parameters:
 
 What changed:
 
-| flutter_colorpicker | hsv_color_picker |
+| flutter_colorpicker | chroma_picker |
 |---|---|
 | `colorToHex(c, includeHashSign: false, enableAlpha: true, toUpperCase: true)` returns `AARRGGBB` | `colorToHex(c, format: HexFormat.aarrggbb, includeHash: true, upperCase: true)`. The default format is `HexFormat.rrggbb` and a `#` is included by default. |
 | `colorFromHex(s, enableAlpha:)` | Same, plus `alphaPosition:` for CSS-style `#RRGGBBAA`, 4-digit input, `0x` prefixes and whitespace. It returns `null` for invalid input. |

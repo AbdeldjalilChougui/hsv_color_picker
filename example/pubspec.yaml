@@ -1,5 +1,5 @@
-name: hsv_color_picker_example
-description: Demo app for the hsv_color_picker package.
+name: chroma_picker_example
+description: Demo app for the chroma_picker package.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  hsv_color_picker:
+  chroma_picker:
     path: ../
 
 dev_dependencies:

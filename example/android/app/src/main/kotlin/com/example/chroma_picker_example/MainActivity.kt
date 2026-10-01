@@ -1,4 +1,4 @@
-package com.example.hsv_color_picker_example
+package com.example.chroma_picker_example
 
 import io.flutter.embedding.android.FlutterActivity
 

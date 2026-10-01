@@ -1,9 +1,9 @@
-name: hsv_color_picker
+name: chroma_picker
 description: Maintained HSV/HSL/RGB color pickers for Flutter with hex input, WCAG contrast, semantics, keyboard control and modern Color APIs.
 version: 0.1.0
 homepage: https://abdeldjalilchougui.biz/
-repository: https://github.com/AbdeldjalilChougui/hsv_color_picker
-issue_tracker: https://github.com/AbdeldjalilChougui/hsv_color_picker/issues
+repository: https://github.com/AbdeldjalilChougui/chroma_picker
+issue_tracker: https://github.com/AbdeldjalilChougui/chroma_picker/issues
 topics:
   - color
   - color-picker

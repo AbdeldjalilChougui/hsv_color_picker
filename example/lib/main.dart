@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hsv_color_picker/hsv_color_picker.dart';
+import 'package:chroma_picker/chroma_picker.dart';
 
 void main() => runApp(const DemoApp());
 
-/// Demo of every picker in `hsv_color_picker`.
+/// Demo of every picker in `chroma_picker`.
 class DemoApp extends StatefulWidget {
   /// Creates the demo.
   const DemoApp({super.key});
@@ -20,7 +20,7 @@ class _DemoAppState extends State<DemoApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'hsv_color_picker demo',
+      title: 'chroma_picker demo',
       theme: ThemeData(colorSchemeSeed: _seed, useMaterial3: true),
       darkTheme: ThemeData(
           colorSchemeSeed: _seed,
@@ -35,7 +35,7 @@ class _DemoAppState extends State<DemoApp> {
         length: 6,
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('hsv_color_picker'),
+            title: const Text('chroma_picker'),
             actions: [
               IconButton(
                 tooltip: 'Toggle dark mode',
